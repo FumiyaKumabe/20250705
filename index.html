@@ -43,7 +43,8 @@
             @apply text-blue-500 text-5xl mb-4;
         }
         .card {
-            @apply bg-white rounded-lg shadow-xl p-6 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl;
+            /* Added border for a more distinct card look */
+            @apply bg-white rounded-lg shadow-xl p-6 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl border border-blue-200;
         }
         .header-main-nav {
             background-color: #213c6b;
@@ -150,6 +151,9 @@
         }
         /* New styles for problem section */
         /* Removed .section-heading as it's no longer needed, using .section-title instead */
+
+        /* Simplified styles for "安心ポイント" cards */
+        /* Reverted to a simpler card style */
     </style>
 </head>
 <body class="bg-gray-50">
@@ -209,7 +213,7 @@
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
                 <br><br>警備業界の勤怠管理を<br><span class="text-yellow-300">スマホde勤怠</span>でスマートに！
             </h1>
-            <p class="text-base md:text-lg mb-5 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200"></p>
+            <p class="text-base md:text-lg mb-5 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
                 電話や紙での管理からスマホへ。勤怠・日報・給与明細まで、スマホ一つで完結します。
             </p>
             <div class="flex flex-col items-center">
@@ -311,144 +315,133 @@
         </div>
     </section>
 
-    <!-- スマホde勤怠の主な機能 section - Redesigned to match the problem section -->
-    <section class="py-16 bg-white">
+    <!-- New Section: "年配の隊員さんには難しいんじゃないの？" - ブラッシュアップ版 -->
+    <section class="bg-white py-16">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <h2 class="section-title">スマホde勤怠の主な機能</h2>
-            <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
-                業務を効率化するための主要機能をご紹介いたします。
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                <!-- Feature Card 1: ワンタップ打刻・自動通知 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">ワンタップ打刻・自動通知</h3>
-                    <p class="text-gray-700 text-base text-left">現場での到着・出発をワンタップで打刻。自宅出発も記録でき、自動で通知されるため連絡の手間が省けます。</p>
-                </div>
-                <!-- Feature Card 2: リアルタイムシフト通知・ナビ機能 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">シフト送信・ナビ機能</h3>
-                    <p class="text-gray-700 text-base text-left">シフトをリアルタイムでスマホへ送信。現場までのナビ機能も搭載し、迷うことなく現場へ直行できます。</p>
-                </div>
-                <!-- Feature Card 3: デジタル給与明細・休暇申請 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-money-check-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">デジタル給与明細・休暇申請</h3>
-                    <p class="text-gray-700 text-base text-left">給与明細もアプリで確認可能。休暇申請もスマホで完結し、ペーパーレス化を促進します。</p>
-                </div>
-                <!-- Feature Card 4: 電子日報・電子サイン・クラウド保存 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">電子日報・クラウド保存</h3>
-                    <p class="text-gray-700 text-base text-left">電子サインで日報を簡単に作成。クラウドに保存されるため、管理業務やリスクが大幅に削減されます。</p>
-                </div>
-                <!-- Feature Card 5: お知らせ一斉配信・既読管理 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">お知らせ一斉配信</h3>
-                    <p class="text-gray-700 text-base text-left">全従業員へのお知らせを一斉配信。アプリを開いてすぐの画面に表示されるので、確認漏れを防げます。</p>
-                </div>
-                <!-- Feature Card 6: 万全のセキュリティ -->
-                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">万全のセキュリティ</h3>
-                    <p class="text-gray-700 text-base text-left">最新技術と堅牢なデータセンターにより、お客様の大切な情報を安全に保護します。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4 max-w-screen-lg">
             <h2 class="section-title">
-                数字で見る導入効果
+                「年配の隊員さんには難しい？」<br>その不安、もう大丈夫です！
             </h2>
-            <div class="grid md:grid-cols-2 gap-8 mt-12 text-center">
-                <div class="card p-6">
-                    <i class="fas fa-hourglass-half feature-icon mb-4 text-purple-500"></i>
-                    <p class="text-5xl font-bold text-purple-600 mb-2"><span class="text-3xl">約</span>65.2<span class="text-3xl">時間/月</span></p>
-                    <p class="text-gray-700 font-semibold">業務削減効果</p>
-                </div>
-                <div class="card p-6">
-                    <i class="fas fa-yen-sign feature-icon mb-4 text-red-500"></i>
-                    <p class="text-5xl font-bold text-red-600 mb-2"><span class="text-3xl">約</span>117.3<span class="text-3xl">万円/年</span></p>
-                    <p class="text-gray-700 font-semibold">コスト削減シミュレーション</p>
+            <!-- Updated introductory text for conciseness -->
+            <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
+                「高齢の隊員でも使いこなせるか」というご質問をよくいただきますが、ご安心ください。<br>
+                『スマホde勤怠』は、多くの年配隊員の方に「簡単で使いやすい！」とご好評いただいています。
+            </p>
+
+            <p class="text-3xl font-extrabold text-blue-600 mb-8 animate-fade-in-up">
+                <i class="fas fa-check-circle mr-3 text-blue-500"></i>でも、実際には…
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg flex flex-col items-center text-center w-full md:w-1/2">
+                    <p class="text-6xl font-extrabold text-blue-700">9,024<span class="text-4xl">名</span></p>
+                    <p class="text-xl font-semibold text-gray-800 mt-2">の隊員様が利用中！</p>
+                    <p class="text-4xl font-extrabold text-blue-700 mt-4">そのうち<span class="text-5xl">35<span class="text-3xl">%</span></span></p>
+                    <p class="text-xl font-semibold text-gray-800 mt-2">が60代以上です。</p>
+                    <p class="text-lg text-gray-600 mt-4 font-bold">
+                        <span class="text-blue-600">つまり、3人に1人以上が“年配スタッフ”。</span><br>年齢に関係なく、現場でしっかり使われている**確かな実績**があります。
+                    </p>
                 </div>
             </div>
-            <div class="text-center mt-12">
-                <p class="text-xl text-gray-700 font-medium mb-6">
-                    スマホde勤怠は、業務効率化とコスト削減に大きく貢献いたします。
-                </p>
-                    <i class="fas fa-chart-line mr-2"></i> <small>警備Pro/スマホde勤怠をご利用中の企業の利用状況、従業員構成比を参考に50名規模企業を想定して算出しています。</small>
+
+            <!-- Updated "安心ポイント" section for conciseness and visual appeal -->
+            <h3 class="text-3xl font-bold text-gray-900 mb-8 section-title">
+                <i class="fas fa-shield-alt mr-2 text-blue-500"></i>年配の方にも「使いやすい」3つの安心ポイント
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- 安心ポイント 1: わかりやすいマニュアル -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-4xl mb-6">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-900">図解＆動画マニュアル</h4>
+                    <p class="text-gray-700 text-base text-left">
+                        見てわかる豊富なマニュアルで、操作に迷わずスムーズに使い始められます。
+                    </p>
+                </div>
+                <!-- 安心ポイント 2: 手厚いサポート体制 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center text-4xl mb-6">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-900">充実のサポート体制</h4>
+                    <p class="text-gray-700 text-base text-left">
+                        電話やLINEでいつでも専門スタッフに相談可能。ITに不慣れでも安心です。
+                    </p>
+                </div>
+                <!-- 安心ポイント 3: 修正可能な設計 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-4xl mb-6">
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-900">あとから修正できる安心設計</h4>
+                    <p class="text-gray-700 text-base text-left">
+                        万が一の入力ミスも簡単に修正可能。「間違えたらどうしよう」という不安なく操作できます。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-        <!-- 導入企業の声 Section - Added here -->
-        <section class="bg-white py-16">
-            <div class="max-w-screen-xl mx-auto px-4 text-center">
-                <h2 class="section-title">
-                    導入企業の声
-                </h2>
-                <!-- Modified grid for customer testimonials to be horizontal on large screens -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
-                    <div class="bg-white rounded-xl shadow-xl p-8 text-left relative border-t-4 border-[#005FB8]">
-                        <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                        <div class="flex items-start mb-6">
-                            <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+1" alt="地域密着型警備会社のユーザー写真（福岡県・従業員20名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                            <div>
-                                <p class="font-bold text-xl text-gray-900">地域密着型警備会社<br>(従業員20名)</p>
-                                <p class="text-base text-gray-600">福岡県</p>
-                            </div>
+    <!-- 導入企業の声 Section - Added here -->
+    <section class="bg-white py-16">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <h2 class="section-title">
+                導入企業の声
+            </h2>
+            <!-- Moved the requested sentences here -->
+            <p class="text-xl text-gray-700 mt-12 mb-4 max-w-2xl mx-auto font-semibold">
+                『スマホde勤怠』は、「誰一人取り残さない」をモットーに、<br class="hidden md:inline">年配の方にも安心してご利用いただけるよう設計された勤怠アプリです。
+            </p>
+            <p class="text-2xl font-extrabold text-green-600 mb-12 animate-fade-in-up">
+                操作満足度（65歳以上の利用者）：<span class="text-4xl">91.7<span class="text-2xl">%</span></span>
+            </p>
+
+            <!-- Modified grid for customer testimonials to be horizontal on large screens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+                <div class="bg-white rounded-xl shadow-xl p-8 text-left relative border-t-4 border-[#005FB8]">
+                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
+                    <div class="flex items-start mb-6">
+                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+1" alt="地域密着型警備会社のユーザー写真（福岡県・従業員20名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
+                        <div>
+                            <p class="font-bold text-xl text-gray-900">地域密着型警備会社<br>(従業員20名)</p>
+                            <p class="text-base text-gray-600">福岡県</p>
                         </div>
-                        <p class="italic text-xl leading-relaxed text-gray-800">
-                            一人で管理しており、月末の事務作業が本当に大変でした。特に現場からの回収や印刷、集計作業に膨大な時間がかかっていましたが、スマホde勤怠を導入してからは全てがアプリで完結。<span class="font-bold text-blue-600">連絡の手間や作業時間が大幅に減りました。</span>想像以上に簡単に使えて、もうアナログな管理には戻れませんね。
-                        </p>
                     </div>
-                    <!-- イベント警備専門会社(従業員50名) を2番目に移動 -->
-                    <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8]">
-                        <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                        <div class="flex items-start mb-6">
-                            <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+2" alt="イベント警備専門会社のユーザー写真（大阪府・従業員50名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                            <div>
-                                <p class="font-bold text-xl text-gray-900">イベント警備専門会社<br>(従業員50名)</p>
-                                <p class="text-base text-gray-600">大阪府</p>
-                            </div>
+                    <p class="italic text-xl leading-relaxed text-gray-800">
+                        一人で管理しており、月末の事務作業が本当に大変でした。特に現場からの回収や印刷、集計作業に膨大な時間がかかっていましたが、スマホde勤怠を導入してからは全てがアプリで完結。<span class="font-bold text-blue-600">連絡の手間や作業時間が大幅に減りました。</span>想像以上に簡単に使えて、もうアナログな管理には戻れませんね。
+                    </p>
+                </div>
+                <!-- イベント警備専門会社(従業員50名) を2番目に移動 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8]">
+                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
+                    <div class="flex items-start mb-6">
+                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+2" alt="イベント警備専門会社のユーザー写真（大阪府・従業員50名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
+                        <div>
+                            <p class="font-bold text-xl text-gray-900">イベント警備専門会社<br>(従業員50名)</p>
+                            <p class="text-base text-gray-600">大阪府</p>
                         </div>
-                        <p class="italic text-xl leading-relaxed text-gray-800">
-                            上下番の連絡が常に課題でした。<span class="font-bold text-blue-600">スマホde勤怠のワンタップ打刻と通知機能のおかげで、電話対応がなくなり、連絡漏れも激減しました。</span>現場までのナビ機能も、不慣れな場所での移動をサポートしてくれ、警備員からも好評です。業務の正確性とスピードが格段に上がりました。」
-                        </p>
                     </div>
-                    <!-- 大規模施設警備(従業員300名) を3番目に移動 -->
-                    <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8]">
-                        <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                        <div class="flex items-start mb-6">
-                            <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+3" alt="大規模施設警備のユーザー写真（東京都・従業員300名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                            <div>
-                                <p class="font-bold text-xl text-gray-900">大規模施設警備<br>(従業員300名)</p>
-                                <p class="text-base text-gray-600">東京都</p>
-                            </div>
+                    <p class="italic text-xl leading-relaxed text-gray-800">
+                        上下番の連絡が常に課題でした。<span class="font-bold text-blue-600">スマホde勤怠のワンタップ打刻と通知機能のおかげで、電話対応がなくなり、連絡漏れも激減しました。</span>現場までのナビ機能も、不慣れな場所での移動をサポートしてくれ、警備員からも好評です。業務の正確性とスピードが格段に上がりました。」
+                    </p>
+                </div>
+                <!-- 大規模施設警備(従業員300名) を3番目に移動 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8]">
+                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
+                    <div class="flex items-start mb-6">
+                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+3" alt="大規模施設警備のユーザー写真（東京都・従業員300名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
+                        <div>
+                            <p class="font-bold text-xl text-gray-900">大規模施設警備<br>(従業員300名)</p>
+                            <p class="text-base text-gray-600">東京都</p>
                         </div>
-                        <p class="italic text-xl leading-relaxed text-gray-800">
-                            弊社では、勤怠の締め作業が毎月大きな負担でした。スマホde勤怠導入後は、勤怠データがリアルタイムで集計され、シフトの自動通知機能で現場との連携もスムーズに。<span class="font-bold text-blue-600">管理業務の『見える化』が進み、業務効率が劇的に向上しました。</span>
-                        </p>
                     </div>
+                    <p class="italic text-xl leading-relaxed text-gray-800">
+                        弊社では、勤怠の締め作業が毎月大きな負担でした。スマホde勤怠導入後は、勤怠データがリアルタイムで集計され、シフトの自動通知機能で現場との連携もスムーズに。<span class="font-bold text-blue-600">管理業務の『見える化』が進み、業務効率が劇的に向上しました。</span>
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4 max-w-screen-lg">
@@ -472,7 +465,6 @@
                         <span class="font-bold text-blue-600">「導入して終わり」ではなく、実際の運用定着まで</span>、
                         を一緒に伴走する姿勢を大切にしています。
                     </p>
-</p>
                 </div>
             </div>
         </div>
@@ -525,8 +517,6 @@
                     </button>
                     <div id="faq6-content" class="p-5 text-gray-600 hidden">
                         A. 専任のサポート担当が導入から運用まで一貫してサポートいたします。運用開始後も、お困りごとやご相談に丁寧に対応し、安心してご利用いただける環境を継続的にご提供します。
-
-
                     </div>
                 </div>
             </div>
