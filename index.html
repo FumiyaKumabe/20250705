@@ -278,6 +278,60 @@
                 font-size: 1.2rem;
             }
         }
+
+        /* Styles for the new logo carousel */
+        .logo-carousel-container {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 3rem; /* Add some spacing */
+            padding: 1rem 0;
+            background-color: #f8fafc; /* Light background for the carousel */
+            border-radius: 0.75rem;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        .logo-carousel-track {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll-left 40s linear infinite; /* Adjust duration as needed */
+        }
+
+        .logo-carousel-track:hover {
+            animation-play-state: paused; /* Pause on hover */
+        }
+
+        .logo-carousel-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 2rem; /* Spacing between logos */
+            flex-shrink: 0; /* Prevent items from shrinking */
+            width: 200px; /* Adjust based on logo size + padding */
+            height: 100px; /* Ensure consistent height */
+        }
+
+        .logo-carousel-item img {
+            max-width: 100%;
+            max-height: 80px; /* Max height for logos */
+            filter: grayscale(100%); /* Make logos grayscale */
+            opacity: 0.6; /* Slightly faded */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .logo-carousel-item img:hover {
+            filter: grayscale(0%); /* Color on hover */
+            opacity: 1; /* Full opacity on hover */
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%); /* Scroll half the track width (one full set of logos) */
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -648,7 +702,7 @@
         他社が変わり始めた今、<br>あなたの会社はどうしますか？
     </h2>
     <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 animated-item">
-        「うちはこのままで大丈夫…？」と感じたら、こちらをご覧ください。<br class="hidden sm:inline">わずか1分、<span class="text-blue-600 font-bold">勤怠管理の“これから”</span>が見えてきます。
+        「うちはこのままで大丈夫…？」と感じたら、こちらをご覧ください。<br class="hidden sm:inline">わずか1分、勤怠管理の<span class="text-blue-600 font-bold">“これから”</span>が見えてきます。
     </p>
 
     <div class="max-w-4xl mx-auto relative rounded-xl shadow-2xl overflow-hidden group transition-all duration-300 hover:scale-[1.02] animated-item">
@@ -918,6 +972,30 @@
             </div>
 
         </div>
+
+        <!-- New Logo Carousel Section -->
+        <div class="logo-carousel-container animated-item">
+            <div class="logo-carousel-track">
+                <!-- Duplicate logos for seamless endless scroll -->
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+A" alt="Company A Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+B" alt="Company B Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+C" alt="Company C Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+D" alt="Company D Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+E" alt="Company E Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+F" alt="Company F Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+G" alt="Company G Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <!-- Repeat the logos to ensure continuous scroll -->
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+A" alt="Company A Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+B" alt="Company B Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+C" alt="Company C Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+D" alt="Company D Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+E" alt="Company E Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+F" alt="Company F Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+                <div class="logo-carousel-item"><img src="https://placehold.co/150x80/E0F2FE/3B82F6?text=Company+G" alt="Company G Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x80/E0F2FE/3B82F6?text=Logo';"></div>
+            </div>
+        </div>
+        <!-- End New Logo Carousel Section -->
+
     </div>
 </section>
 
