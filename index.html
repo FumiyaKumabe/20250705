@@ -19,7 +19,7 @@
             font-size: 3rem;
             font-weight: 800;
             margin-top: 1rem;
-            margin-bottom: 4.5rem; 
+            margin-bottom: 4.5rem;
             text-align: center;
             color: #1a202c;
             letter-spacing: -0.025em;
@@ -34,7 +34,7 @@
             height: 6px;
             background-color: #3b82f6;
             border-radius: 3px;
-            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4); /* 影を追加 */
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
         }
         .gradient-bg {
             background: linear-gradient(to right, #60a5fa, #3b82f6);
@@ -176,7 +176,6 @@
             @apply w-20 h-20 flex items-center justify-center flex-shrink-0 mb-4 md:mb-0;
         }
 
-        /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -194,7 +193,6 @@
         .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
         .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
 
-        /* Initial hidden state for JS-triggered animations */
         .animated-item {
             opacity: 0;
             transform: translateY(20px);
@@ -215,7 +213,7 @@
         }
 
         .faq-answer.open {
-            max-height: 500px; /* Adjust as needed */
+            max-height: 500px;
             opacity: 1;
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -350,97 +348,90 @@
     </section>
 
 <section class="bg-gray-100 py-16">
-  <div class="max-w-screen-xl mx-auto px-4 md:px-8"> <!-- Adjusted horizontal padding here -->
-    <h2 class="section-title text-center animated-item">
-      アナログを手放した現場では、<br>日々の業務がこう変わりました。
-    </h2>
-    <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto text-center whitespace-nowrap animated-item">
-      多くの警備会社様が抱えていた“当たり前の苦労”は、『スマホde勤怠』で一掃されています。<br>
-      実際に現場や管理側で、どんな変化が起きたのかをご紹介します。
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-8 justify-center">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <h2 class="section-title text-center animated-item">
+            アナログを手放した現場では、<br>日々の業務がこう変わりました。
+        </h2>
+        <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto text-center whitespace-nowrap animated-item">
+            多くの警備会社様が抱えていた“当たり前の苦労”は、『スマホde勤怠』で一掃されています。<br>
+            実際に現場や管理側で、どんな変化が起きたのかをご紹介します。
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-8 justify-center">
 
-      <!-- 勤怠打刻 -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">勤怠打刻</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone002.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">勤怠打刻</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone002.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>ワンタップで簡単打刻</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>上下番連絡が不要に</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>自宅出発も正確に記録</li>
+                </ul>
+            </div>
+
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">シフト通知</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone003.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>リアルタイムで変更を通知</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>ナビで現場までスムーズ到着</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>伝達ミスをゼロに</li>
+                </ul>
+            </div>
+
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">給与明細</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone005.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>アプリで明細を確認</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>紙の管理・郵送が不要に</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>いつでもどこでも閲覧可能</li>
+                </ul>
+            </div>
+
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">休暇申請</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone004.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>スマホから申請・承認が完結</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>状況をアプリで即確認</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>申請・承認の流れをペーパーレス化</li>
+                </ul>
+            </div>
+
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">スマホdeサイン</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone006.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>日報をスマホで作成・署名</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>クラウド保存で紛失リスクなし</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>集計や転記の手間をゼロに</li>
+                </ul>
+            </div>
+
+            <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
+                <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">お知らせ配信</h3>
+                <div class="flex flex-col items-center mb-4">
+                    <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone001.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
+                </div>
+                <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>全員に一斉通知</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>個別の連絡もアプリで完結</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>情報共有の遅延・漏れを解消</li>
+                </ul>
+            </div>
+
         </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>ワンタップで簡単打刻</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>上下番連絡が不要に</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>自宅出発も正確に記録</li>
-        </ul>
-      </div>
-
-      <!-- 以下5ブロックも同様に中央寄せとリスト位置調整 -->
-      <!-- シフト通知 -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">シフト通知</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone003.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
-        </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>リアルタイムで変更を通知</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>ナビで現場までスムーズ到着</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>伝達ミスをゼロに</li>
-        </ul>
-      </div>
-
-      <!-- 給与明細 -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">給与明細</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone005.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
-        </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>アプリで明細を確認</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>紙の管理・郵送が不要に</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>いつでもどこでも閲覧可能</li>
-        </ul>
-      </div>
-
-      <!-- 休暇申請 -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">休暇申請</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone004.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
-        </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>スマホから申請・承認が完結</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>状況をアプリで即確認</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>申請・承認の流れをペーパーレス化</li>
-        </ul>
-      </div>
-
-      <!-- スマホdeサイン -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">スマホdeサイン</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone006.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
-        </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>日報をスマホで作成・署名</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>クラウド保存で紛失リスクなし</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>集計や転記の手間をゼロに</li>
-        </ul>
-      </div>
-
-      <!-- お知らせ配信 -->
-      <div class="feature-card-item h-full flex flex-col animated-item mx-auto">
-        <h3 class="text-2xl font-bold mb-2 text-blue-700 text-center">お知らせ配信</h3>
-        <div class="flex flex-col items-center mb-4">
-          <div class="mb-2" style="background-image: url('https://raw.githubusercontent.com/fumiyakumabe/20250705/main/phone001.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 320px; height: 580px; max-width: 100%; background-color: transparent; border: none;"></div>
-        </div>
-        <ul class="list-none space-y-2 text-gray-700 text-lg text-left ml-10 flex-1"> <!-- Adjusted left margin here -->
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>全員に一斉通知</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>個別の連絡もアプリで完結</li>
-          <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>情報共有の遅延・漏れを解消</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
 </section>
 
     <section class="bg-white py-16">
@@ -469,9 +460,14 @@
                     </p>
                 </div>
             </div>
-            <h3 class="section-title animated-item">
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <h2 class="section-title animated-item">
                 「スマホなんて無理」と言っていた隊員が、<br>初日から使えた理由
-            </h3>
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center animated-item">
                     <div class="w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-4xl mb-6">
@@ -507,9 +503,9 @@
         </div>
     </section>
 
-        <section class="bg-gray-50 py-16">
+    <section class="bg-white py-16">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <h2 class="section-title">
+            <h2 class="section-title animated-item">
                 年配隊員の“本音”をご紹介します
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -547,218 +543,166 @@
             <p class="text-sm text-gray-500 mt-6">
                 ※2025年6月実施｜65歳以上の『スマホde勤怠』利用者825名へのアンケート結果
             </p>
-
         </div>
     </section>
 
 
-<section class="bg-gray-50 py-16">
-  <div class="max-w-screen-xl mx-auto text-center px-4">
-    <h2 class="section-title animated-item">
-      紙と電話をやめた会社で、<br>実際に起きたこと
-    </h2>
+<section class="bg-gray-100 py-16">
+    <div class="max-w-screen-xl mx-auto text-center px-4">
+        <h2 class="section-title animated-item">
+            紙と電話をやめた会社で、<br>実際に起きたこと
+        </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
 
-      <div class="bg-blue-50 p-6 rounded-xl shadow-lg text-center animated-item">
-        <p class="text-5xl font-extrabold text-blue-600 mb-2"><span class="text-2xl">▲</span>89.3<span class="text-2xl">%</span></p>
-        <p class="text-lg font-semibold text-gray-800 mb-1">伝達・入力ミスの削減</p>
-        <p class="text-gray-600 text-base">
-          紙や電話での上下番報告から<br>スマホ入力に切り替えたことで、<br>記録ミスが激減。
-        </p>
-      </div>
+            <div class="bg-blue-50 p-6 rounded-xl shadow-lg text-center animated-item">
+                <p class="text-5xl font-extrabold text-blue-600 mb-2"><span class="text-2xl">▲</span>97.3<span class="text-2xl">%</span></p>
+                <p class="text-lg font-semibold text-gray-800 mb-1">伝達・入力ミスの削減</p>
+                <p class="text-gray-600 text-base">
+                    紙や電話での上下番報告から<br>スマホ入力に切り替えたことで、<br>記録ミスが激減。
+                </p>
+            </div>
 
-      <div class="bg-green-50 p-6 rounded-xl shadow-lg text-center animated-item">
-        <p class="text-5xl font-extrabold text-green-600 mb-2"><span class="text-2xl">▲</span>65.2<span class="text-2xl">時間</span></p>
-        <p class="text-lg font-semibold text-gray-800 mb-1">管制業務の月間削減</p>
-        <p class="text-gray-600 text-base">
-          勤怠・日報・給与処理が、<br>
-          月84.9時間→19.7時間に。<br>
-          現場管理がスマホで完結。
-        </p>
-      </div>
+            <div class="bg-green-50 p-6 rounded-xl shadow-lg text-center animated-item">
+                <p class="text-5xl font-extrabold text-green-600 mb-2"><span class="text-2xl">▲</span>65.2<span class="text-2xl">時間</span></p>
+                <p class="text-lg font-semibold text-gray-800 mb-1">管制業務の月間削減</p>
+                <p class="text-gray-600 text-base">
+                    勤怠・日報・給与処理が、<br>
+                    月84.9時間→19.7時間に。<br>
+                    現場管理がスマホで完結。
+                </p>
+            </div>
 
-      <div class="bg-yellow-50 p-6 rounded-xl shadow-lg text-center animated-item">
-        <p class="text-5xl font-extrabold text-yellow-600 mb-2"><span class="text-2xl">▲</span>1,173,600<span class="text-2xl">円</span></p>
-        <p class="text-lg font-semibold text-gray-800 mb-1">年間コスト削減</p>
-        <p class="text-gray-600 text-base">
-          勤怠・日報・明細の手作業を削減し、<br>
-          人件費だけで年間117.36万円カット。
-        </p>
-      </div>
-    </div>
-            <p class="text-sm text-gray-500 mt-6 animated-item">
-                ※Proシリーズを導入いただいている従業員約50名の企業様で実際に見られた改善効果の一例です。
-            </p>
-  </div>
-</section>
-
-<section class="py-24 bg-gradient-to-b from-blue-50 to-white text-center relative">
-  <h2 class="section-title animated-item">
-    他社が変わり始めた今、<br>あなたの会社はどうしますか？
-  </h2>
-  <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 animated-item">
-    「うちはこのままで大丈夫…？」と感じたら、この動画を見てください。<br class="hidden sm:inline">わずか1分、勤怠管理の“これから”が見えてきます。
-  </p>
-
-  <div class="max-w-4xl mx-auto relative rounded-xl shadow-2xl overflow-hidden group transition-all duration-300 hover:scale-[1.02] animated-item">
-    <div class="relative pb-[56.25%] h-0">
-      <iframe
-        class="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/E88yOCPiMcM?rel=0&autoplay=0&controls=1&modestbranding=1"
-        title="『スマホde勤怠』 紹介動画"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-
-  <p class="mt-8 text-sm text-gray-500 animated-item">※音声あり推奨／スマホでも視聴可能</p>
-</section>
-
-
-<section class="bg-gray-100 py-20">
-  <div class="bg-white rounded-xl p-10 shadow-xl max-w-6xl mx-auto">
-    <h3 class="section-title animated-item">これまで紹介した変化を一挙に比較</h3>
-
-    <div class="grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 text-center font-bold text-lg mb-8 border-b-2 border-gray-200 pb-4 animated-item">
-      <div class="text-gray-800 text-center w-full pl-4"><span class="relative left-4">業務内容</span></div>
-      <div class="flex justify-center items-center gap-1">
-        <i class="fas fa-circle-minus text-[#DC2626]"></i><span>導入前</span>
-      </div>
-      <div class="flex justify-center items-center gap-1">
-        <i class="fas fa-circle-check text-[#16A34A]"></i><span>導入後</span>
-      </div>
-    </div>
-
-    <ul class="space-y-8">
-
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">シフト通知</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-calendar-alt text-[#DC2626] mt-1"></i>
-            <span>Excel印刷→手渡し。修正時は再印刷が必要。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-bell text-[#16A34A] mt-1"></i>
-            <span>変更即アプリ通知。常に最新版を共有。</span>
-          </p>
-        </li>
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">勤怠打刻</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-file-alt text-[#DC2626] mt-1"></i>
-            <span>紙へ記入→FAX。集計ミス・遅延が頻発。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-mobile-alt text-[#16A34A] mt-1"></i>
-            <span>スマホを1タップ。リアルタイム自動集計。</span>
-          </p>
-        </li>
-
-
-
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">上下番連絡</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-phone text-[#DC2626] mt-1"></i>
-            <span>電話・LINE・口頭が混在。伝達漏れが多発。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-comment-dots text-[#16A34A] mt-1"></i>
-            <span>打刻時に自動共有。誰が既読かも一目瞭然。</span>
-          </p>
-        </li>
-
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">日報・報告</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-pencil-alt text-[#DC2626] mt-1"></i>
-            <span>手書き＋郵送。紛失や記入漏れが課題。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-clipboard-check text-[#16A34A] mt-1"></i>
-            <span>現場入力→クラウド保存。即時確認完了。</span>
-          </p>
-        </li>
-
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">給与明細</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-envelope text-[#DC2626] mt-1"></i>
-            <span>印刷・封入・郵送。再発行や誤送のリスク。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-money-check-alt text-[#16A34A] mt-1"></i>
-            <span>アプリで即閲覧。ペーパーレスで手間ゼロ。</span>
-          </p>
-        </li>
-
-        <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
-          <h4 class="font-bold text-gray-800 text-center">情報共有</h4>
-          <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
-            <i class="fas fa-users text-[#DC2626] mt-1"></i>
-            <span>掲示板や口頭頼り。周知徹底が難しい。</span>
-          </p>
-          <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
-            <i class="fas fa-share-alt text-[#16A34A] mt-1"></i>
-            <span>スマホ一斉通知＋既読管理で確実に届く。</span>
-          </p>
-        </li>
-    </ul>
-  </div>
-</section>
-
-    <section class="bg-white py-16">
-        <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <h2 class="section-title animated-item">
-                導入企業が語る、<br>『スマホde勤怠』“リアルな変化”
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
-                <div class="bg-white rounded-xl shadow-xl p-8 text-left relative border-t-4 border-[#005FB8] animated-item">
-                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                    <div class="flex items-start mb-6">
-                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+1" alt="地域密着型警備会社のユーザー写真（福岡県・従業員20名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                        <div>
-                            <p class="font-bold text-xl text-gray-900">地域密着型警備会社<br>(従業員20名)</p>
-                            <p class="text-base text-gray-600">福岡県</p>
-                        </div>
-                    </div>
-                    <p class="italic text-xl leading-relaxed text-gray-800">
-                        事務所に戻るたびに格闘してました。とくに月末は“現場かデスクかどっちも地獄”状態。<span class="font-bold text-blue-600">スマホde勤怠を入れてからは“帰って処理”がなくなって、夕方の疲れが激減しました。</span>もう元には戻れませんね。
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8] animated-item">
-                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                    <div class="flex items-start mb-6">
-                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+2" alt="イベント警備専門会社のユーザー写真（大阪府・従業員50名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                        <div>
-                            <p class="font-bold text-xl text-gray-900">イベント警備専門会社<br>(従業員50名)</p>
-                            <p class="text-base text-gray-600">大阪府</p>
-                        </div>
-                    </div>
-                    <p class="italic text-xl leading-relaxed text-gray-800">
-                        連絡が本当に大変だったんですよ。打刻するだけで管制に連動されるのを見て、“なんでこれ今までなかったの？”って驚きました。<span class="font-bold text-blue-600">集合場所も細かくピンで設定ができる</span>から迷わず行けて助かってます。
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col text-left relative border-t-4 border-[#005FB8] animated-item">
-                    <div class="absolute top-0 left-8 -mt-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[0px] border-b-white"></div>
-                    <div class="flex items-start mb-6">
-                        <img src="https://placehold.co/80x80/D3D3D3/666666?text=User+Photo+3" alt="大規模施設警備のユーザー写真（東京都・従業員300名）" class="w-20 h-20 rounded-full mr-6 object-cover border-4 border-white shadow-md">
-                        <div>
-                            <p class="font-bold text-xl text-gray-900">大規模施設警備<br>(従業員300名)</p>
-                            <p class="text-base text-gray-600">東京都</p>
-                        </div>
-                    </div>
-                    <p class="italic text-xl leading-relaxed text-gray-800">
-                        勤怠の締めは、もう“月末地獄”って呼んでました。今はシフトも出勤も<span class="font-bold text-blue-600">リアルタイムで見えるから、“集める・数える・連絡する”がゼロに。</span>経理からも“早く出せるようになった”と喜ばれてます。
-                    </p>
-                </div>
+            <div class="bg-yellow-50 p-6 rounded-xl shadow-lg text-center animated-item">
+                <p class="text-5xl font-extrabold text-yellow-600 mb-2"><span class="text-2xl">▲</span>1,173,600<span class="text-2xl">円</span></p>
+                <p class="text-lg font-semibold text-gray-800 mb-1">年間コスト削減</p>
+                <p class="text-gray-600 text-base">
+                    勤怠・日報・明細の手作業を削減し、<br>
+                    人件費だけで年間117.36万円カット。
+                </p>
             </div>
         </div>
-    </section>
+        <p class="text-sm text-gray-500 mt-6 animated-item">
+            ※Proシリーズを導入いただいている従業員約50名の企業様で実際に見られた改善効果の一例です。
+        </p>
+    </div>
+</section>
 
-<section class="py-20 bg-gray-100">
+<section class="py-24 bg-white text-center relative">
+    <h2 class="section-title animated-item">
+        他社が変わり始めた今、<br>あなたの会社はどうしますか？
+    </h2>
+    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 animated-item">
+        「うちはこのままで大丈夫…？」と感じたら、この動画を見てください。<br class="hidden sm:inline">わずか1分、勤怠管理の“これから”が見えてきます。
+    </p>
+
+    <div class="max-w-4xl mx-auto relative rounded-xl shadow-2xl overflow-hidden group transition-all duration-300 hover:scale-[1.02] animated-item">
+        <div class="relative pb-[56.25%] h-0">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/E88yOCPiMcM?rel=0&autoplay=0&controls=1&modestbranding=1"
+                title="『スマホde勤怠』 紹介動画"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+
+    <p class="mt-8 text-sm text-gray-500 animated-item">※音声あり推奨／スマホでも視聴可能</p>
+</section>
+
+
+<section class="bg-gray-50 py-20">
+    <div class="bg-white rounded-xl p-10 shadow-xl max-w-6xl mx-auto">
+        <h3 class="section-title animated-item">これまで紹介した変化を一挙に比較</h3>
+
+        <div class="grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 text-center font-bold text-lg mb-8 border-b-2 border-gray-200 pb-4 animated-item">
+            <div class="text-gray-800 text-center w-full pl-4"><span class="relative left-4">業務内容</span></div>
+            <div class="flex justify-center items-center gap-1">
+                <i class="fas fa-circle-minus text-[#DC2626]"></i><span>導入前</span>
+            </div>
+            <div class="flex justify-center items-center gap-1">
+                <i class="fas fa-circle-check text-[#16A34A]"></i><span>導入後</span>
+            </div>
+        </div>
+
+        <ul class="space-y-8">
+
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">シフト通知</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-calendar-alt text-[#DC2626] mt-1"></i>
+                    <span>Excel印刷→手渡し。修正時は再印刷が必要。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-bell text-[#16A34A] mt-1"></i>
+                    <span>変更即アプリ通知。常に最新版を共有。</span>
+                </p>
+            </li>
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">勤怠打刻</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-file-alt text-[#DC2626] mt-1"></i>
+                    <span>紙へ記入→FAX。集計ミス・遅延が頻発。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-mobile-alt text-[#16A34A] mt-1"></i>
+                    <span>スマホを1タップ。リアルタイム自動集計。</span>
+                </p>
+            </li>
+
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">上下番連絡</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-phone text-[#DC2626] mt-1"></i>
+                    <span>電話・LINE・口頭が混在。伝達漏れが多発。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-comment-dots text-[#16A34A] mt-1"></i>
+                    <span>打刻時に自動共有。誰が既読かも一目瞭然。</span>
+                </p>
+            </li>
+
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">日報・報告</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-pencil-alt text-[#DC2626] mt-1"></i>
+                    <span>手書き＋郵送。紛失や記入漏れが課題。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-clipboard-check text-[#16A34A] mt-1"></i>
+                    <span>現場入力→クラウド保存。即時確認完了。</span>
+                </p>
+            </li>
+
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-gray-50 py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">給与明細</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-envelope text-[#DC2626] mt-1"></i>
+                    <span>印刷・封入・郵送。再発行や誤送のリスク。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-money-check-alt text-[#16A34A] mt-1"></i>
+                    <span>アプリで即閲覧。ペーパーレスで手間ゼロ。</span>
+                </p>
+            </li>
+
+            <li class="flex flex-col md:grid md:[grid-template-columns:12rem_1fr_1fr] gap-4 items-start bg-white py-10 px-6 rounded-lg shadow-sm animated-item">
+                <h4 class="font-bold text-gray-800 text-center">情報共有</h4>
+                <p class="flex gap-2 items-start border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pr-6">
+                    <i class="fas fa-users text-[#DC2626] mt-1"></i>
+                    <span>掲示板や口頭頼り。周知徹底が難しい。</span>
+                </p>
+                <p class="flex gap-2 items-start pt-4 md:pt-0 md:pl-6">
+                    <i class="fas fa-share-alt text-[#16A34A] mt-1"></i>
+                    <span>スマホ一斉通知＋既読管理で確実に届く。</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="bg-white py-20">
     <div class="max-w-3xl mx-auto px-4">
         <h2 class="section-title animated-item">
             現場を知る私たちが、<br class="hidden md:inline">運用後もしっかり支えます
@@ -812,7 +756,7 @@
     </div>
 </section>
 
-<section class="py-20 bg-white">
+<section class="bg-gray-100 py-20">
     <div class="max-w-3xl mx-auto px-4">
         <h2 class="section-title animated-item">
             よくあるご質問
@@ -886,7 +830,7 @@
     </div>
 </section>
 
-<section class="bg-gray-50 py-16">
+<section class="bg-white py-16">
     <div class="max-w-screen-xl mx-auto text-center px-4">
         <h2 class="section-title animated-item">
             Proシリーズの導入実績と高い満足度
@@ -968,7 +912,6 @@
     </div>
 
     <script>
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -978,7 +921,6 @@
             });
         });
 
-        // FAQ Toggle functionality
         document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const answer = button.nextElementSibling;
@@ -989,7 +931,6 @@
             });
         });
 
-        // Video Modal functionality
         const playVideoButton = document.getElementById('play-video-button');
         const videoModal = document.getElementById('video-modal');
         const closeModalButton = document.getElementById('close-modal-button');
@@ -1000,37 +941,31 @@
         const youtubeVideoId = 'E88yOCPiMcM';
 
         playVideoButton.addEventListener('click', () => {
-            // Pause background video and hide its overlay
             backgroundVideo.src = '';
             videoOverlay.classList.add('hidden');
 
-            // Set modal video source and show modal
             modalVideoIframe.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&mute=0&controls=1&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0`;
             videoModal.classList.remove('hidden');
         });
 
         closeModalButton.addEventListener('click', () => {
-            // Stop modal video and hide modal
             modalVideoIframe.src = '';
             videoModal.classList.add('hidden');
-            videoOverlay.classList.remove('hidden'); // Show overlay again
+            videoOverlay.classList.remove('hidden');
 
-            // Restart background video
             backgroundVideo.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&mute=1&loop=1&playlist=${youtubeVideoId}&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0`;
         });
 
-        // Close modal when clicking outside the video content
         videoModal.addEventListener('click', (e) => {
             if (e.target === videoModal) {
                 modalVideoIframe.src = '';
                 videoModal.classList.add('hidden');
-                videoOverlay.classList.remove('hidden'); // Show overlay again
+                videoOverlay.classList.remove('hidden');
 
                 backgroundVideo.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&mute=1&loop=1&playlist=${youtubeVideoId}&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0`;
             }
         });
 
-        // Intersection Observer for scroll animations
         const animatedItems = document.querySelectorAll('.animated-item');
 
         const observer = new IntersectionObserver(
@@ -1038,13 +973,13 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('show');
-                        observer.unobserve(entry.target); // Stop observing once animated
+                        observer.unobserve(entry.target);
                     }
                 });
             },
             {
                 rootMargin: '0px',
-                threshold: 0.1 // Trigger when 10% of the item is visible
+                threshold: 0.1
             }
         );
 
