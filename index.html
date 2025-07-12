@@ -223,6 +223,61 @@
         .rotate-180 {
             transform: rotate(180deg);
         }
+
+        /* Floating button specific styles */
+        .floating-button {
+            position: fixed;
+            right: 1rem; /* Adjust as needed */
+            bottom: 2rem; /* Adjust as needed */
+            z-index: 999; /* Ensure it stays on top */
+            display: flex;
+            flex-direction: row; /* Changed to row for horizontal layout */
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #3b82f6, #60a5fa); /* Blue gradient */
+            color: white;
+            padding: 0.75rem 1.5rem; /* Adjusted padding for horizontal */
+            border-radius: 9999px; /* Fully rounded */
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+            font-weight: bold;
+            font-size: 1rem; /* Adjusted font size for horizontal text */
+            width: auto; /* Auto width for horizontal text */
+            height: auto; /* Auto height */
+            min-height: auto; /* Removed min-height */
+            white-space: nowrap; /* Keep text on one line */
+        }
+
+        .floating-button:hover {
+            transform: translateY(-5px) scale(1.05); /* Lift and slightly enlarge on hover */
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .floating-button .text-horizontal { /* Changed class name for clarity */
+            /* Removed vertical-rl and text-orientation */
+            margin-left: 0.5rem; /* Space between icon and text */
+        }
+
+        .floating-button i {
+            font-size: 1.5rem; /* Icon size */
+            margin-right: 0.5rem; /* Space between icon and text */
+            margin-bottom: 0; /* Removed bottom margin */
+        }
+
+        /* Responsive adjustments for the floating button */
+        @media (max-width: 768px) {
+            .floating-button {
+                right: 0.5rem;
+                bottom: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+            .floating-button i {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -910,6 +965,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Floating "資料請求" button -->
+    <a href="#contact" class="floating-button">
+        <i class="fas fa-file-alt"></i>
+        <span class="text-horizontal">資料請求</span>
+    </a>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
