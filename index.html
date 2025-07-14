@@ -332,6 +332,32 @@
                 transform: translateX(-50%); /* Scroll half the track width (one full set of logos) */
             }
         }
+
+        /* New styles for improved step design */
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem; /* Space between steps */
+        }
+
+        /* Modified step-number-circle for oval shape and "STEP" text */
+        .step-number-oval {
+            @apply px-4 py-2 flex items-center justify-center bg-blue-600 text-white rounded-full font-bold text-lg flex-shrink-0 mr-4 shadow-md;
+            min-width: 90px; /* Ensure enough width for "STEP X" */
+            text-align: center;
+        }
+
+        .step-content {
+            flex-grow: 1;
+        }
+
+        .step-title {
+            @apply font-semibold text-xl text-gray-900 mb-1;
+        }
+
+        .step-description {
+            @apply text-gray-700 text-base space-y-1;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -387,7 +413,7 @@
                 <br><br>警備業界の勤怠管理を<br><span class="text-yellow-300">『スマホde勤怠』</span>でスマートに！
             </h1>
             <p class="text-base md:text-lg mb-5 max-w-3xl mx-auto opacity-90 animated-item">
-                もう紙と電話には戻れない。年配隊員もラクラク使える、勤怠アプリの最終形。
+                もう紙と電話には戻れない。ご年配の隊員さんもラクラク使える、勤怠アプリの最終形。
             </p>
             <div class="flex flex-col items-center">
                 <br><br>
@@ -422,7 +448,7 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-900">手集計の勤怠処理</h3>
-                    <p class="text-gray-700 text-base text-left">現場・隊員ごとに違う形式、紙のタイムカード。集計だけで何時間も浪費していませんか？</p>
+                    <p class="text-gray-700 text-base text-left">現場・隊員さんごとに違う形式、紙のタイムカード。集計だけで何時間も浪費していませんか？</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center animated-item">
                     <div class="w-20 h-20 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-4xl mb-6">
@@ -564,7 +590,7 @@
                     <p class="text-4xl font-extrabold text-blue-700 mt-4">そのうち約<span class="text-5xl">35<span class="text-3xl">%</span></span></p>
                     <p class="text-xl font-semibold text-gray-800 mt-2">3人に1人以上が60代以上です。</p>
                     <p class="text-l text-gray-600 mt-4 font-bold">
-                        実際に <span class="text-blue-600 font-bold">70代・80代の隊員</span> も日々『スマホde勤怠』を利用しています。<br>
+                        実際に <span class="text-blue-600 font-bold">70代・80代の隊員さん</span> も日々『スマホde勤怠』を利用しています。<br>
                         操作が難しいという不安は、もう過去のものです。
                     </p>
                 </div>
@@ -575,7 +601,7 @@
     <section class="bg-gray-50 py-16">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
             <h2 class="section-title animated-item">
-                「スマホなんて無理」と言っていた隊員が、<br>初日から使えた理由
+                「スマホなんて無理」と言っていた隊員さんが、<br>初日から使えた理由
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center animated-item">
@@ -585,7 +611,7 @@
                     <h4 class="text-xl font-bold mb-3 text-gray-900">誰でも迷わず使える</h4>
                     <p class="text-gray-700 text-base text-left">
                         操作は“タップするだけ”。<br>
-                        実際に操作した隊員も、「これならできる」と初日で打刻できました。
+                        実際に操作した隊員さんも、「これならできる」と初日で打刻できました。
                     </p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center animated-item">
@@ -595,7 +621,7 @@
                     <h4 class="text-xl font-bold mb-3 text-gray-900">充実のサポート体制</h4>
                     <p class="text-gray-700 text-base text-left">
                         操作に不安がある方には、丁寧にご案内。<br>
-                        実際にスマホが初めての隊員も、サポートを受けてその日から使えました。
+                        実際にスマホが初めての隊員さんも、サポートを受けてその日から使えました。
                     </p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center animated-item">
@@ -615,13 +641,13 @@
     <section class="bg-white py-16">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
             <h2 class="section-title animated-item">
-                年配隊員の“本音”をご紹介します
+                ご年配の隊員さんの“本音”をご紹介します
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div class="bg-blue-50 p-6 rounded-xl shadow-md text-left border-l-4 border-blue-500">
                     <p class="text-gray-800 font-semibold mb-2">65歳・男性・交通誘導</p>
                     <p class="text-gray-700 text-base">
-                        「最初は“こんなもんいらん”と思ってましたよ。紙のほうが早いし、いちいちスマホなんて面倒くさいって。でもいざ使ってみたら、<span class="text-blue-600 font-bold">打刻も日報も押すだけ</span>でした。今は紙に戻せって言われても断りますね。」
+                        「最初は“こんなもんいらん”と思ってましたよ。紙のほうが早いし、いちいちスマホなんて面倒くさいって。でもいざ使ってみたら、<span class="text-blue-600 font-bold">打刻も日報も押すだけ</span>でした。けど、もう少し文字が大きいともっと見やすいかな！」
                     </p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-xl shadow-md text-left border-l-4 border-blue-500">
@@ -633,7 +659,7 @@
                 <div class="bg-blue-50 p-6 rounded-xl shadow-md text-left border-l-4 border-blue-500">
                     <p class="text-gray-800 font-semibold mb-2">69歳・男性・巡回警備</p>
                     <p class="text-gray-700 text-base">
-                        「電話しか使ったことなかったし、正直“無理だろ”って思ってました。でも設定も一緒にやってくれて、“押すだけですよ”って言われてね。<span class="text-blue-600 font-bold">本当に押すだけ</span>だった。」
+                        「導入したばかりの頃は、ちょっとした不具合で報告がうまくできないこともありました。でも最近はそれもなくなって、操作も覚えたので<span class="text-blue-600 font-bold">今は問題なく使えています。</span>「これなら続けられるな」って、今では思ってます。」
                     </p>
                 </div>
             </div>
@@ -711,6 +737,7 @@
                 class="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/E88yOCPiMcM?rel=0&autoplay=0&controls=1&modestbranding=1"
                 title="『スマホde勤怠』 紹介動画"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
             ></iframe>
@@ -860,60 +887,182 @@
         </div>
     </section>
 
-    
-<section class="bg-gray-50 py-20">
-    <div class="max-w-3xl mx-auto px-4">
-        <h2 class="section-title animated-item">
-            現場を知る私たちが、<br class="hidden md:inline">運用後もしっかり支えます
-        </h2>
+    <!-- New Section: 導入ステップの事例紹介 -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <h2 class="section-title animated-item">
+                一斉？それとも段階？導入ステップの事例をご紹介
+            </h2>
 
-        <div class="relative border-l-4 border-blue-600 pl-6 space-y-16">
-            <div class="relative animated-item">
-                <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
-                <div class="bg-white shadow-md rounded-xl p-6 ml-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 1：導入前ヒアリング</h3>
-                    <p class="text-gray-700">
-                        勤務形態や隊員構成、現場の特性を丁寧に確認。<br>
-                        現場目線で、無理なく運用できる導入設計を組み立てます。
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <!-- Case 01 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl text-left border-t-4 border-blue-500 animated-item">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-6">Case 01｜全員一斉に導入して定着<br><span class="text-xl font-normal text-gray-600">（地域密着型／隊員数30名）</span></h3>
+                    
+                    <div class="space-y-6">
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 1</div>
+                            <div class="step-content">
+                                <h4 class="step-title">事前に管理者が操作確認</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>事前にアプリを操作し、「どこでつまずくか」を想定</li>
+                                    <li>不明点はサポートへ確認して準備を整える</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 2</div>
+                            <div class="step-content">
+                                <h4 class="step-title">現場単位で説明＆インストール</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>午前と午後に分けて、短時間の説明会を実施</li>
+                                    <li>その場でアプリを一緒にインストールし、体験</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 3</div>
+                            <div class="step-content">
+                                <h4 class="step-title">初週は問い合わせ体制を強化</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>導入初週だけは電話・LINEでの相談窓口を常設</li>
+                                    <li>2週目には問い合わせもゼロに</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 4</div>
+                            <div class="step-content">
+                                <h4 class="step-title">アプリ打刻を“朝の習慣”として定着</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>出勤時にはアプリで打刻するよう、ルール化</li>
+                                    <li>繰り返すうちに“当たり前の行動”となり、自然に定着</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-8 border-l-4 border-blue-600">
+                        <p class="font-semibold text-gray-800 mb-2">管理者の声（総務担当・Mさん）</p>
+                        <p class="text-gray-700 italic">
+                            「正直、年配の隊員も多いので不安はありました。でも、“どうせやるなら一気に”と腹を決めて、一斉導入に踏み切りました。
+                            その分、最初の一週間はこちらも手厚くサポートしましたが、結果的には短期集中で習慣化できたのが良かったと思っています。」
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="relative animated-item">
-                <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
-                <div class="bg-white shadow-md rounded-xl p-6 ml-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 2：操作説明・初期設定支援</h3>
-                    <p class="text-gray-700">
-                        現場担当者への操作説明や、初期設定を実施。<br>
-                        不慣れな方がいても、安心してスタートできます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="relative animated-item">
-                <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
-                <div class="bg-white shadow-md rounded-xl p-6 ml-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 3：運用開始と伴走サポート</h3>
-                    <p class="text-gray-700">
-                        運用開始後も、設定変更・ミス対応・個別相談に柔軟に対応。<br>
-                        現場で本当に“使いこなせる”まで、しっかり支援します。
-                    </p>
-                </div>
-            </div>
-
-            <div class="relative animated-item">
-                <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
-                <div class="bg-white shadow-md rounded-xl p-6 ml-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 4：継続運用サポート</h3>
-                    <p class="text-gray-700">
-                        新たな活用方法まで幅広くサポート。<br>
-                        長く安心してご利用いただけるよう伴走を続けます。
-                    </p>
+                <!-- Case 02 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl text-left border-t-4 border-blue-500 animated-item">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-6">Case 02｜段階的に導入して反発ゼロ<br><span class="text-xl font-normal text-gray-600">（大手警備会社／隊員数700名）</span></h3>
+                    
+                    <div class="space-y-6">
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 1</div>
+                            <div class="step-content">
+                                <h4 class="step-title">若手の多い現場から試験導入</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>最初は10名の現場でテスト導入</li>
+                                    <li>問題なく運用できることを確認</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 2</div>
+                            <div class="step-content">
+                                <h4 class="step-title">マニュアル＆動画をセット配布</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>紙の手順書＋1分動画で「見て真似するだけ」の設計</li>
+                                    <li>操作説明会は不要に</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 3</div>
+                            <div class="step-content">
+                                <h4 class="step-title">操作に不安のある隊員へは個別対応</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>一緒に操作する時間を確保して不安を解消</li>
+                                    <li>「これならできる」と自信をもってもらう</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number-oval">STEP 4</div>
+                            <div class="step-content">
+                                <h4 class="step-title">2ヶ月半で全社導入完了</h4>
+                                <ul class="list-disc list-inside step-description">
+                                    <li>年齢に関係なく全員がスムーズに定着</li>
+                                    <li>離脱者ゼロ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-8 border-l-4 border-blue-600">
+                        <p class="font-semibold text-gray-800 mb-2">管理者の声（現場統括・Yさん）</p>
+                        <p class="text-gray-700 italic">
+                            「隊員が多く、一気に切り替えるのは現実的ではありませんでした。
+                            だからまずは若い現場で試して、“できる・使える”という空気を社内に作ってから広げました。
+                            段階的に進めたことで、誰ひとり反発することなくスムーズに定着したのは大きな成果だと思っています。」
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- End New Section -->
+
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="section-title animated-item">
+                現場を知る私たちが、<br class="hidden md:inline">運用後もしっかり支えます
+            </h2>
+
+            <div class="relative border-l-4 border-blue-600 pl-6 space-y-16">
+                <div class="relative animated-item">
+                    <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white shadow-md rounded-xl p-6 ml-4">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 1：導入前ヒアリング</h3>
+                        <p class="text-gray-700">
+                            勤務形態や隊員構成、現場の特性を丁寧に確認。<br>
+                            現場目線で、無理なく運用できる導入設計を組み立てます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative animated-item">
+                    <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white shadow-md rounded-xl p-6 ml-4">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 2：操作説明・初期設定支援</h3>
+                        <p class="text-gray-700">
+                            現場担当者への操作説明や、初期設定を実施。<br>
+                            不慣れな方がいても、安心してスタートできます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative animated-item">
+                    <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white shadow-md rounded-xl p-6 ml-4">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 3：運用開始と伴走サポート</h3>
+                        <p class="text-gray-700">
+                            運用開始後も、設定変更・ミス対応・個別相談に柔軟に対応。<br>
+                            現場で本当に“使いこなせる”まで、しっかり支援します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative animated-item">
+                    <div class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white shadow-md rounded-xl p-6 ml-4">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Step 4：継続運用サポート</h3>
+                        <p class="text-gray-700">
+                            新たな活用方法まで幅広くサポート。<br>
+                            長く安心してご利用いただけるよう伴走を続けます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <section class="bg-white py-20">
     <div class="max-w-3xl mx-auto px-4">
